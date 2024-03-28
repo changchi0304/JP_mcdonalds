@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+ *,*::before,*::after{
+    box-sizing:border-box;
+}
+
+/* 以上為css reset */
+
+/* 以下為我自行設定的css */
+.header{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+}
+
+.center_Menu{
+    display: flex;
+    align-items: end;
+}
+.center_Menu li{
+    margin-right: 5px;
+    font-weight: bolder;
+    margin-bottom: 35px;
+}
+.center_Menu a{
+    text-decoration: none;
+    color: black;
+}
+.center_Menu a:hover{
+    color: red;
+    border-bottom: 5px solid red;
+}
+.right_Menu{
+    display: flex;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.right_Menu li{
+    margin-right: 10px;
+}
+.right_Menu a{
+   text-decoration: none;
+   color: #939292; 
+}
+.right_Menu a:hover{
+    text-decoration: none;
+    color:#3C3C3C;
+ }
+.center_Banner{
+display: flex;
+
+}
+.center_Banner img{
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.speacal_notice h2{ 
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.speacal_notice{
+    width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.speacal_notice a{
+    width:300px;
+    display: inline;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 50px;
+    border-radius: 9px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: #FFF;
+    margin-bottom: 5px;
+}
+.speacal_notice a:hover{
+    background-color: #FCFCFC;
+}
+.recommend_Product{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.recommend_Product h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.recommend_Product p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.product_Imgbox{
+    display: flex;
+    justify-content: space-around;
+}
+.product_Imgbox li{
+    width: 25%;
+    border-radius: 25px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+}
+
+
