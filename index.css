@@ -157,9 +157,40 @@ display: flex;
     justify-content: space-around;
 }
 .product_Imgbox li{
-    width: 25%;
+    width: 20%;
     border-radius: 25px;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
 }
+.news_Box{   
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.news_Box h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+.news_Box li{
+    border-radius: 9px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+.news_Box a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    display: inline;
+    background-color: #FFF;
+}
+.news_Box a:hover{
+    background-color: #FCFCFC;
+}
+.text_Bolder{
+    font-weight: bolder;
+}
+
 
 
