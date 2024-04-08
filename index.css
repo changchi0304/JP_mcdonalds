@@ -217,6 +217,7 @@ display: flex;
 .under_footermenu{
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 .under_footermenu a{
    text-decoration: none;
@@ -228,7 +229,19 @@ display: flex;
     margin-left: auto;
     margin-right: auto;
 }
-
+.language_box a:hover{
+    font-weight: bolder;
+    color: red;
+}
+.logo_box img{
+    width: 167px;
+    height:150px;
+}
+.outbox{
+    border-top:1px solid #d8d8d8;
+    width: 1200px;
+    margin: auto;
+}
 
 
 
