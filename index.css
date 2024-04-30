@@ -242,6 +242,10 @@ display: flex;
     width: 1200px;
     margin: auto;
 }
+.swiper {
+    width: 618px;
+    height: 246px;
+    }
 
 
 

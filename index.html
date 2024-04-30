@@ -6,7 +6,8 @@
     <title>JP mcdonalds</title>
     <link rel="icon" href="./images/mcd-logo.svg">
     <link rel="stylesheet" href="index.css">
-    
+    <!-- swiper的輪播css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- 頁首 -->
@@ -36,9 +37,30 @@
     </ul>
     </div>
      <!-- 中間輪播圖區域 -->
-     <div class="center_Banner">
+     <!-- <div class="center_Banner">
      <img src="./images/center_Banner.jpg" alt="">
-     </div>
+     </div> -->
+     <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+           <img src="./images/center_Banner.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/center_Banner.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/center_Banner.jpg" alt="">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>  
+      </div>
      <!-- 特別公告區塊 -->
      <div class="speacal_notice">
         <h2>特別なお知らせ</h2>
@@ -172,5 +194,28 @@
         </div>
      </div>
     </div>
+    <!-- 以下為swiper的輪播js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  autoplay:{
+    delay:3000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+ 
+});
+</script>
 </body>
 </html>
